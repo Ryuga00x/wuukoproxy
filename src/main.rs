@@ -8,5 +8,6 @@ use wuukoproxy::{Parser,
 fn main(){
     let arga = Cli::parse();
     let (listen_host,port,binded_adrr) = get_bind_data(&arga);
+    
 
 }

@@ -6,3 +6,4 @@ pub mod arg;
 pub mod http;
 pub mod socks5;
 pub mod flag;
+pub mod server;
