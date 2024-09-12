@@ -11,11 +11,11 @@ pub struct Cli{  // for arg )
 
     /// the port for binding the server
     #[arg(short,long)]
-    pub port : String,
+    pub port : u16,
     
 
 }
 
 pub fn get_bind_data(cli : &Cli) -> (String,String,String){
-    (cli.ipadress.clone(),cli.port.clone(),format!("{}:{}",cli.ipadress,cli.port))
+    (cli.ipadress.clone(),cli.port.to_string().clone(),format!("{}:{}",cli.ipadress,cli.port))
 }
